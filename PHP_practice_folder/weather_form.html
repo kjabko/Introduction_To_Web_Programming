@@ -1,0 +1,55 @@
+<DOCTYPE html>
+	<html lang= eng>
+<head><title>Weather</title></head>
+<body>
+<h1>How's your weather</h1>
+<?php
+if (!isset($_POST['submit'])) {
+?>
+<form method= 'post' action= 'class_Select'>
+	<P>Please enter your information</p>
+		City: <input type= 'text' name= 'city'/>
+		Month: <input type= 'text' name= 'month'/>
+		Year: <input type= 'text' name= 'year'/>
+		<p>Please choose the kinds of weather you expierienced from the list below<br/>Choose all that apply.</p>
+
+<input type= 'checkbox' name= 'weather[]' value= 'sunshine'/>Sunshine<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Clouds<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Rain<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Hail<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Sleet<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Snow<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Wind<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Cold<br/>
+<input type= 'checkbox' name= 'weahter[]' value= 'clouds'/>Heat<br/>
+<p/>
+<input type= 'submit' name= 'GO!'/>
+
+<?php
+}else{
+$inputLocal = array(
+	$_POST['city'],
+	$_POST['month'],
+	$_POST['year']
+	);
+echo "In $inputLocal[0] in the month of $inputLocal[1] $inputLocal[2] you observed the following weather.";
+}
+
+$weather = $_POST['weather'];
+foreach ($$weather as $w) {
+	echo $w;
+}
+var_dump(if);
+}
+?>
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>

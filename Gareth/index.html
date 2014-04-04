@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+	
+	<meta charset="utf-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="favicon.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="tpl/css/bootstrap.min.css">
+
+	<!-- Bootstrap Theme -->
+	<link rel="stylesheet" href="tpl/css/bootstrap-theme.min.css">
+
+	<!-- Readme CSS -->
+	<link rel="stylesheet" href="tpl/css/readme.css">
+
+	<!-- HTML 5 Shiv -->
+	<!--[if lt IE 9]><script src="../tpl/js/html5-shiv.js"></script><![endif]-->
+
+	<base href="/dsa-oop-web-app-assignment/">
+
+	<title>Readme</title>
+
+</head>
+
+	<body>
+		
+		<div id="wrap">
+			
+			<article class="container">
+				
+				<h1>Readme</h1>
+				
+				<h2>Minimum PHP Requirements</h2>
+
+				<h3>5.4.0</h3>
+				<ul>
+					<li>Shortened syntax for declaring arrays (> 5.4.0).</li>
+					<li>For the MySQLi <code>'connect_error'</code> property used in the <code>connect()</code> method in <kbd>/php/classes/DB.class.php</kbd> (> 5.3.0).</li>
+					<li>Anonymous autoloader function <kbd>/php/autoloader.php</kbd> (> 5.3.0).</li>
+					<li>Usage of the <code>__DIR__</code> magic constant when requiring or including files (> 5.3.0).</li>
+				</ul>
+
+				<h2>Base HREF</h2>
+				<p>
+					The base HREF is set to <code>&lt;base href="/dsa-oop-web-app-assignment/"&gt;</code> because no virtual host is used.
+					<br>
+					<code>dsa-oop-web-app-assignment</code> is a directory inside <code>www</code>, using WAMP the full path is <code>C:\wamp\www\dsa-oop-web-app-assignment\</code> so the app expects to be in a folder called <code>dsa-oop-web-app-assignment</code> for relative links to work from page to page.
+					<br>
+					If the relative links are not working inside the app just edit or remove the base HREF directive in <kbd>/tpl/inc/head-section.inc.php</kbd>
+				</p>
+
+				<h2>Database Setup</h2>
+				<p>The database setup script <kbd>/tasks-setup.sql</kbd> creates the <code>dsa_oop_web_app_assignment</code> database &amp; imports some sample tasks into the <code>tasks</code> table.</p>
+
+
+				<h2>Coding Style</h2>
+				PHP code is writting using the PSR-2 Coding Style Guide - <a href="https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md" target="_blank">https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md</a>.
+
+				<h2>Class Autoloader</h2>
+				Instead of requiring or including files for dependent class usage - the anonymous autoloader function <kbd>/php/autoloader.php</kbd> loads dependent classes.
+
+				<h2>Database Classes</h2>
+				<p>The core database class <kbd>/php/classes/DB.class.php</kbd> establishes the database connection with credentials retrieved from <kbd>/php/dbConn.inc.php</kbd>.</p>
+				<p>This database class is used for every database query with each child class extending this class.</p>
+				<p>Each DB child class follows the same naming convention <code>{table_name}.class.php</code> and is named according to the table it interacts with.</p>
+				<p>Every query to the database is performed using prepared statements with the MySQLi library (executed through the core DB class) for security (anti SQL Injection) &amp; caching performance.</p>
+
+				<h2>HTML/CSS</h2>
+				<p>HTML/CSS is enhanced using the <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> front-end framework.</p>
+
+				<h2>Tasks - CRUD Functions</h2>
+
+				<h3>Create a Task</h3>
+				<p><code>task/create.php</code> calls <code>Tasks class->create method</code> - Create a new task in the tasks table.</p>
+				<ul>
+					<li>Create a new task: <a href="task/create.php" target="_blank">task/create.php</a></li>
+				</ul>
+
+				<h3>View an Individual Task</h3>
+				<p><code>task/view-task.php</code> calls <code>Tasks class->get method</code> - Retrieves a single task from the tasks table based on the <code>task-id</code> query string.</p>
+				<ul>
+					<li>View existing task: <a href="task/view-task.php?task-id=1" target="_blank">task/view-task.php?task-id=1</a></li>
+					<li>View a <u>NON</u> existing task: <a href="task/view-task.php?task-id=1000" target="_blank">task/view-task.php?task-id=1000</a></li>
+					<li>View an existing task but <u>do not</u> supply a task id: <a href="task/view-task.php?task-id" target="_blank">task/view-task.php?task-id</a> or <a href="task/view-task.php" target="_blank">task/view-task.php</a></li>
+				</ul>
+
+				<h3>View All Tasks</h3>
+				<p><code>task/view-all-tasks.php</code> calls <code>Tasks class->getAllTasks method</code> - View all tasks in the tasks table.</p>
+				<ul>
+					<li><a href="task/view-all-tasks.php" target="_blank">task/view-all-tasks.php</a></li>
+				</ul>
+			
+				<h3>Edit a Task</h3>
+				<p><code>task/edit.php</code> calls <code>Tasks class->update method</code> - Edit an existing task in the tasks table based on the <code>task-id</code> query string.</p>
+				<ul>
+					<li>Edit a task: <a href="task/edit.php?task-id=1" target="_blank">task/edit.php?task-id=1</a></li>
+					<li>Attempt to edit a <u>NON</u> existing task: <a href="task/edit.php?task-id=1000" target="_blank">task/edit.php?task-id=1000</a></li>
+					<li>Edit an existing task but <u>do not</u> supply a task id: <a href="task/edit.php?task-id" target="_blank">task/edit.php?task-id</a> or <a href="task/edit.php" target="_blank">task/edit.php</a></li>
+				</ul>
+
+				<h3>Delete a Task</h3>
+				<p><code>task/delete.php</code> calls <code>Tasks class->delete method</code> - Delete an existing task in the tasks table based on the <code>task-id</code> query string.</p>
+				<ul>
+					<li>Delete a task: <a href="task/delete.php?task-id=2" target="_blank">task/delete.php?task-id=2</a></li>
+					<li>Attempt to edit a <u>NON</u> existing task: <a href="task/delete.php?task-id=1000" target="_blank">task/delete.php?task-id=1000</a></li>
+					<li>Edit an existing task but <u>do not</u> supply a task id: <a href="task/delete.php?task-id" target="_blank">task/delete.php?task-id</a> or <a href="task/delete.php" target="_blank">task/delete.php</a></li>
+				</ul>
+
+				<br><br>
+
+			</article>
+		
+		</div>
+			
+	</body>
+
+</html>

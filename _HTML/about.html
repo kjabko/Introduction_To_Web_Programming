@@ -1,0 +1,157 @@
+<!--
+* Author: Krzysztof Jablonski
+* Assignment: HTML Assignment, Digital Skills Academy
+* Student ID: D13126785
+* Date: 2014/03/10
+* Email: krzysztof.jablonski@webelevate.ie
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Lorem ipsum</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel='stylesheet' href='MyCSS.css'>
+
+</head>
+
+ <body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class='active'><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div><!--/.navbar-default -->
+
+
+     
+<div class='page-header'>
+         <h1>Lorem Ipsum</h1>
+
+         <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <!--up to this line the code is the same as in index.html file-->
+
+</div><!--/.page-header-->
+<div class='main'><!--wrapper for carousel-->
+<h3>Please wait 5 sec for a corusel to start</h3>
+<div id="carousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+    </ol>
+    
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        
+        <div class="item active">
+            <img src="img/fender_tele_3.jpg" alt="Slide 1" />
+        </div>
+        <div class="item">
+            <img src="img/fender_tele_4.jpg" alt="Slide 2" />
+        </div>
+        <div class="item">
+            <img src="img/fender_tele_2.jpg" alt="Slide 3" />
+        </div>
+    </div> 
+    <!-- Controls -->
+    <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+</div><!--main-->
+
+<div class='mar'><!--wrapper for jumbotron and columns below carousel-->
+<div class='jumbotron'>
+    
+      <div class="row">
+        <div class="col-lg-4">
+              
+          <img class="img-circle" src="img/cross_tele_1.jpg" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+          <p><a class="btn btn-primary" href="#" role="button" id='button' data-toggle="tooltip" data-placement="bottom" title="Some text">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/small_tele_3.jpg" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-warning" href="#" role="button" id='button' data-toggle="tooltip" data-placement="bottom" title="Some text">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="img/cross_tele_2.jpg" alt="Generic placeholder image">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-success" href="#" role="button" id='button' data-toggle="tooltip" data-placement="bottom" title="Some text">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+</div><!--jumbotron-->
+</div><!--mar-->
+
+
+<footer>
+  
+        <p class="copy">&copy; 2014 Krzysztof Jablonski. All Rights Reserved | Handcrafted using <a href="http://getbootstrap.com">Twitter Bootstrap</a> and good few cups of coffe | <a href="mailto:krzysztof.jablonski@webelevate.ie">Contact me</a></p>
+</footer><!--footer-->
+
+
+
+</div> <!-- /container -->
+
+
+    <!-- Links placed at the end of the document so the pages load faster -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  <script>$(#button)tooltip(); //call tooltip
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+body{background-image:url('img/telecaster.jpg');background-attachment:fixed;background-position:center bottom;background-size:cover;position:relative;width:100%;height:800px}
+font-family:'Droid Serif',serif}
+.container>.navbar-collapse,.logo{margin:0 10px}
+.navbar-default{margin-top:40px}
+.navbar-default{background:transparent}
+.navbar-default {border: 0px}
+.navbar-nav{font-family:'Open Sans',sans-serif;font-weight:600;font-size:1.20em;margin-left:590px}
+.navbar-default .navbar-nav>li{margin-right:5px}
+.navbar-default .navbar-nav>li>a{color:#fff}
+.navbar-default .navbar-right>li>a{color:#fff}
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-right>li>a:hover{border:2px solid #FFF;color:#FF8000}
+.navbar-fixed-top{position:absolute}
+.jumbotron
+.jumbotron .hero{background-attachment:fixed;margin:0 auto;padding:220px 0 220px;width:100%}
+.jumbotron .container{text-align:left}
+.jumbotron h1{font-family:'Roboto Slab',serif;font-size:80px;font-weight:700;color:#fff}
+.jumbotron p{font-family:'Open Sans',sans-serif;color:#fff;font-size:25px}
+romote{padding-top:0px;padding-bottom:0px;margin-top:-24px;background-color:#F3FCF4}
+.container .col-lg-4 h2{font-family:'Roboto Slab',sans-serif;font-weight:400}
+.container .col-lg-4 p{font-family:'Open Sans',serif;font-weight:300;font-size:16px;line-height:1.6}
+.btn-primary {position:absolute;top:50%;left:45%;width:48px;height:38px;background-image:url('img/bird_black.png')}
+
+
+#nav{width:200px;height:100%;position:absolute;top:0;left:0;z-index:100;background:#111;color:#fff;overflow:hidden;}
+#nav ul{margin:0;padding:0;width:200px;margin:10px;list-style:none;}
+#nav a span{margin:0 10px 0 0;}
+#nav a{color:#fff;font-size:14px;text-decoration:none;}
+
+#accordion .a {padding:0px;}
+
+
+
+.hidden-sidebar {
+    background-color: #2B2625;ygiuiop
+    color: #A29B97;
+    display: none;
+    font-size: 15px;
+    height: 100%;
+    line-height: 25px;
+    overflow-y: auto;
+    padding: 60px 45px 45px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 320px;
+    z-index: -1;}
+
+.foot{height:80px;background-attachment:fixed;background-position:center bottom;background-size:cover;position:relative;width:100%;margin:0;background:transparent}
+footer p{text-align:center;font-family:'Open Sans',sans-serif;font-size:13px;color:#FF8000}
+footer p.copy{position:relative;top:0px}
+footer p.copy a{color:#fff;text-decoration:underline}
+footer p.top{position:relative;top:px;cursor:pointer;font-family:'Meddon',sans-serif;font-size:45px}
+
+
+
+
+
+
+
+
+
+
+
+

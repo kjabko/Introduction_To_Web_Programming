@@ -1,0 +1,70 @@
+/*****************************************************************
+* Author: Edel Doherty
+* Assignment: WE3.1 PHP Web App Assignment, Digital Skills Academy
+* Student ID: D13126690
+* Date : 2014/02/14
+*****************************************************************/
+
+/********CSS********/
+
+/**************************************************
+* Art for Blind Records 
+* URL: http://artforblind.com
+*  
+* DESCRIPTION: main layout and styling for webform
+**************************************************/
+
+body {
+  font-family: courier, serif;
+  font-size: 1em;  /* base font size 16px;*/
+
+  background: #FFFFFF;
+  color: #000033;
+  line-height: 150%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+h1 {font-size: 1.425em;}
+h2 {font-size: 1.2em;}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+header h1 {
+  margin-top: 50px;
+}
+
+
+form.contact {
+  float: left;
+  margin-top: 20px;
+  padding-top: 1em;
+  }
+
+form.contact h2 {
+  font-size: 1.425em;
+  padding-bottom: 1em;
+  } 
+  
+form.contact p {
+  padding-bottom: 0.5em;
+  }
+
+form.contact label {
+  font-weight: bold;
+  font-size: 0.8em;
+  }
+  
+form.contact .buttonarea input {
+  background: #7A0000;
+  color: white;
+  font-weight: bold;
+  margin-top:5px;
+  padding: 0.3125em;
+  border: 1px solid white;
+  display: inline-block;
+  }

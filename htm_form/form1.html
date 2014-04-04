@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+<title>Form Response with If-Else Statement</title>
+</head>
+ 
+<body>
+<h2>Favorite City</h2>
+ 
+<?php
+//If form not submitted, display form.
+if (!isset($_POST['submit'])){
+?>
+ 
+<form method="post" action="yourfile.php">
+<!--Make sure you have entered the name you gave the file as the action.-->
+Please enter your favorite city:  <br />
+<input type="text" name="city" />
+<p />
+<input type="submit" name="submit" value="Go" />
+</form>
+ 
+<?php
+//If form submitted, process input.
+}else{
+ 
+//Retrieve string from form submission.
+$city = $_POST['city'];
+echo "Your favorite city is $city.";
+ 
+}
+?>
+ 
+</body>
+</html>

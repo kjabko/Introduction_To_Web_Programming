@@ -1,0 +1,239 @@
+<!--
+* Author: Krzysztof Jablonski
+* Assignment: HTML Assignment, Digital Skills Academy
+* Student ID: D13126785
+* Date: 2014/03/10
+* Email: krzysztof.jablonski@webelevate.ie
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Lorem ipsum</title>
+
+<link rel="stylesheet" href="css/bootstrap.css"><!--link to bootstrap css-->
+<link rel='stylesheet' href='MyCSS.css'><!--link to created by me, customized css.
+Both links are placed in a header for fast loading-->
+</head>
+
+ <body>
+
+    <div class="container"><!--wrapper for all site content-->
+
+      <!-- fixed navbar, serves only as navigation header for a site. The code is provided by bootstrap, I applied my own styling to classes-->
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- -->
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class='active'><a href="index.html">Home</a></li><!--dropdown links to navigate between sites-->
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu"><!--dropdown button-->
+                  <li><a href="#">Action</a></li><!--dropdown links to navigate between sites-->
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div><!--/.navbar-default -->
+ 
+    <div class='page-header'><!--header for project name and search bar-->
+      <h1>Lorem Ipsum</h1>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search"><!--search bar-->
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+     <div class='head'><!--wrapper for jumbotron and common tags like p, h1, so they can be used multiple times throughtout the website and manipulated separately in css. No need for id attribute each time I need different style for those tags-->
+     <div class="jumbotron" id='jumbotron'><h1>HTML Assignment</h1></div><!--bootstrap component that can be used to showcase key content on. Here used for animated website header image.-->
+      </div><!--/.head-->
+          <div class='hero'><!--wrapper for another jumbotron-->
+          <div class='jumbotron'><!--servers as container for accordion, handy for positioning and independent styling using customized css file-->
+          <div class="btn btn-large btn-default" id="accordion" data-toggle="tooltip" data-placement="bottom" title="Please click here and scroll down if needed to see more content" data-container="body"><!--bootstrap tooltip / use of data attribute / when mouse hovers over button some text pops out.--> 
+             
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><!--bootstrap accordion code-->
+         <span>Launch demo accordion</span><!--clicking initializes accordion-->
+        </a>
+      </h4>
+    </div> 
+    <div id="collapseOne" class="panel-collapse collapse"><!--responsible for accordion collapsing effect--> 
+      <div class="panel-body">
+<div class='row'>
+    
+<img src='img/fender_tele_1.jpg'>
+<img src='img/fender_tele_4.jpg'>
+<img src='img/fender_tele_3.jpg'>
+   </div> <!--/.row-->
+ </div><!--/.panel-body-->
+  </div><!--/.collapse-->
+</div><!--/.jumbotron-->
+</div><!--/.hero-->
+
+<span class='content'><!--wrapper for another jumbotron / used as container for text and columns--> 
+ <div class='jumbotron'>
+ <div class='col-lg-4'>
+    <h2 class='blink'>CLICK HERE TO SEE BUTTONS</h2><!--class 'blink' attribute for jquery, clicking shows hidden buttons-->
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. .</p>
+  <p><a class="btn btn-warning btn-lg" href='#' role="button" id='button' data-toggle="tooltip" data-placement="bottom" title="Some text">Demo Tooltip &raquo;</a></p><!--jquery animated buttons / tooltip effect when mouse hovers-->
+</div>
+  <div class='col-lg-4'>
+    <h2 class='blink'>CLICK HERE TO SEE BUTTONS</h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. . </p>
+<p><a class="btn btn-primary btn-lg" href='#' role="button" id='button1' data-toggle="tooltip" data-placement="bottom" title="Some text">Demo Tooltip &raquo;</a></p>
+</div>
+  <div class='col-lg-4'>
+    <h2 class='blink'>CLICK HERE TO SEE BUTTONS</h2>
+  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.</p>
+<p><a class="btn btn-success btn-lg" href='#' role="button" id='button2' data-toggle="tooltip" data-placement="bottom" title="Some text">Demo Tooltip &raquo;</a></p>
+</div>
+</div><!--/.jumbotron-->
+   </div><!--/.content-->
+   </div> <!--/.row-->
+
+
+<footer>
+  
+        <p class="copy">&copy; 2014 Krzysztof Jablonski. All Rights Reserved | Handcrafted using <a href="http://getbootstrap.com">Twitter Bootstrap</a> and good few cups of coffe | <a href="mailto:krzysztof.jablonski@webelevate.ie">Contact me</a></p>
+</footer><!--footer-->
+
+</div> <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery.flipping_text.js"></script><!--three links to jquery libraries / links are placed at the bottom of the site to make the pages load as quickly as possible for the user.-->
+    
+    
+    <script> //hides / shows buttons  
+    $(document).ready(function()//runs when page loaded 
+    {
+      $('#button').hide();//hide id='button'
+
+      $('h2').click(function()//clicking h2 tag triggers next line 
+      {
+      $('#button').show(1000);//shows buttons and controls animation delay  
+
+    });
+    });
+
+    $(document).ready(function() {
+      $('#button1').hide();
+
+      $('h2').click(function() {
+      $('#button1').show(1000);   
+
+    });
+    });
+
+$(document).ready(function() {
+      $('#button2').hide();
+
+      $('h2').click(function() {
+      $('#button2').show(1000);   
+
+    });
+    });
+    
+</script>
+
+    <script>
+//main image animation script
+    $(#accordion)tooltip({offset: [10, 2],
+    effect: 'slide'}).dynamic({bottom: {direction: 'down', bounce: true}});
+
+    $(#button)tooltip({offset: [10, 2],
+    effect: 'slide'}).dynamic({bottom: {direction: 'down', bounce: true}});</script>
+    <script>(function($) {  
+  
+            var x = 0;  
+            var y = 0;  
+            //cache a reference to the banner  
+            var banner = $("#jumbotron");  
+  
+            // set initial banner background position  
+            banner.css('backgroundPosition', x + 'px' + ' ' + y + 'px');  
+  
+            // scroll up background position every 90 milliseconds  
+            window.setInterval(function() {  
+                banner.css("backgroundPosition", x + 'px' + ' ' + y + 'px');  
+                y--;  
+                //x--;  
+  
+                
+            }, 30);//speed of image sliding  
+  
+})(jQuery);  
+
+$("h1").flipping_text({
+    tickerTime: 10, // Define a time between each ticket in milliseconds. 
+    customRandomChar: false, // random strings defined. The default value is false which will use random string: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    tickerCount: 10, // Set the number of characters randomly shown before the real text is shown here.
+    opacityEffect: true, //toggle the opacity effect. Setto false won't make a random text to fade in.
+    resetOnChange: false // Toggle this to true would make the plugin to stop and fill in all the text immediately when the user changes browser's tab.
+  });
+</script>
+<script>
+//blinkig text script
+$(function($)
+{
+    $.fn.blink = function(options)
+    {
+        var defaults = { delay:1000 };//controls delay in blinking
+        var options = $.extend(defaults, options);
+       
+        return this.each(function()
+        {
+            var obj = $(this);
+            setInterval(function()//sets intervals for blinking 
+            {
+                if($(obj).css("visibility") == "visible")
+                {
+                    $(obj).css('visibility','hidden');
+                }
+                else
+                {
+                    $(obj).css('visibility','visible');
+                }
+            }, options.delay);
+        });
+    }
+}(jQuery))
+
+jQuery(document).ready(function()
+{
+    jQuery('.blink').blink();//calls blink function
+});
+</script>
+
+</html>

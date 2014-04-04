@@ -1,0 +1,4 @@
+#----- PHP Error Display
+php_flag display_errors On
+php_flag display_startup_errors On
+php_flag html_errors On

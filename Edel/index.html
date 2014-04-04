@@ -1,0 +1,57 @@
+<!--
+/*****************************************************************
+* Author: Edel Doherty
+* Assignment: WE3.1 PHP Web App Assignment, Digital Skills Academy
+* Student ID: D13126690
+* Date : 2014/02/14
+*****************************************************************/
+-->
+
+
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   <title>Art for Blind Records Artist / Record look-up app</title>
+   <meta charset="utf-8" />
+   <link href="reset.css" rel="stylesheet" type="text/css" />
+   <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+  	<header class="container">
+  		<h1>Art for Blind Records</h1>
+  		<p>
+  		</p>
+  	</header>
+
+  	<div id="form" class="container">
+
+  	<form method="post" action="index.php" name="bandLookUp" class="contact"> 
+    
+    <fieldset>                                    
+     <legend>Artist/Release look-up app</legend><br>      
+     <p><label for="topic" size="35" />Please select a band from the menu and find out what record we released by them: </label></p>
+     <p>
+      <select name="bands" id="bands">
+       <option value ="Carson Wells">Carson Wells</option>
+       <option value ="The #1s">The #1s</option>
+       <option value ="Wolfbait">Wolfbait</option>
+       <option value ="September Girls">September Girls</option>
+       <option value ="Plaids">Plaids</option>
+       <option value ="Pine Barrens">Pine Barrens</option>
+       <option value ="Broken Arm">Broken Arm</option>
+       <option value ="Plaids / No Action">Plaids / No Action</option>
+       <option value ="Rory Francis O'Brien">Rory Francis O'Brien</option>
+     </select> 
+     <br/>
+
+     <div class="buttonarea">
+      <input type="submit" value="Go!"  /> 
+     </div>                        
+    </p> 
+
+    </form>
+
+  </body>
+ </html>
